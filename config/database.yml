@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: course-app_development
+  port: 5432
+
+test:
+  <<: *default
+  database: course-app_test
+
+production:
+  <<: *default
+  database: course-app_production
+  host: localhost
