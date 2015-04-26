@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root  'pages#home'
+
+  root 'pages#home'
 
   get 'course' => 'pages#course'
 
@@ -7,12 +8,11 @@ Rails.application.routes.draw do
 
   resources :testimonials, only: [:index, :new, :show, :create, :destroy]
 
+  resources :students
+
   controller :sessions do
     get  'login' => :new
     post 'login' => :create
     delete 'logout' => :destroy
   end
-
-  resources :students
-
 end

@@ -2,10 +2,6 @@
   <h1>Log in</h1>
 </div>
 
-<% if flash[:alert] %>
-    <div class="alert alert-danger"><%= flash[:alert] %></div>
-<% end %>
-
 <%= form_tag({:action => 'create'}, {class: 'form-horizontal center'}) do %>
     <div class="form-group">
       <%= label_tag :name, 'Name:', class: 'col-md-4 control-label' %>
