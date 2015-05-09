@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  include Styx::Initializer
+
   def authorize
     unless Mentor.find_by(id: session[:mentor_id])
       redirect_to login_url, notice: 'Please log in'

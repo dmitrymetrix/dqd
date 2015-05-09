@@ -30,6 +30,8 @@ gem 'bootstrap-sass', '~> 3.3.3'
 
 gem 'puma'
 
+gem 'styx'
+
 group :production do
   # Use postgresql as the database for Active Record
    #Heroku integration
