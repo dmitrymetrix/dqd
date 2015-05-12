@@ -1,0 +1,29 @@
+<%= form_for @bytowka, html: {class: 'form-horizontal center'} do |f| %>
+
+    <% if @bytowka.errors.any? %>
+        <div class="alert alert-danger">
+          <b><%= pluralize(@bytowka.errors.count, "error") %> on form.</b>
+          <ul>
+            <% @bytowka.errors.full_messages.each do |message| %>
+                <li>* <%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.label :Параметр, class: 'col-md-4 control-label' %>
+      <div class="col-md-6">
+        <%= f.text_field :parametr, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :Кошт, class: 'col-md-4 control-label' %>
+      <div class="col-md-6">
+        <%= f.text_field :kosht, class: 'form-control' %>
+      </div>
+    </div>
+
+    <%= f.submit "#{action_name} bytowka", class: 'btn btn-large btn-primary' %>
+<% end %>

@@ -3,6 +3,8 @@ puts 'Drop students...'
 Student.delete_all
 puts 'Drop courses...'
 Course.delete_all
+#puts 'Drop parametrs...'
+#Bytowki.delete.all
 
 # create courses
 puts 'Creating courses...'
@@ -37,3 +39,17 @@ students = [
 ]
 
 students.map { |s| Student.create!(s) }
+
+#puts 'Creating parametres...'
+#bytowkis = [
+#    {
+#        Parametr: 'Okna',
+#        Kosht: 1000000,
+#    },
+#    {
+#        Parametr: 'dweri',
+#        Kosht: 2500000
+#    }
+#]
+
+

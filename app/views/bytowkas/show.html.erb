@@ -1,0 +1,9 @@
+<div class="page-header list-group">
+  <h2><%= @bytowka.parametr %></h2>
+</div>
+
+<% if session[:mentor_id] %>
+    <%= link_to "Рэдагаваць", edit_bytowka_path(@bytowka), class: 'btn btn-default' %>
+    <%= link_to 'Выдаліць', @bytowka, method: :delete, class: 'btn btn-danger',
+                data: { confirm: "You sure?" } %>
+<% end %>

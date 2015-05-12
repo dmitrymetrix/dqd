@@ -1,14 +1,14 @@
 <div class="page-header">
-  <h1>New testimonial</h1>
+  <h1>Новы водгук</h1>
 </div>
 
 <%= form_for(@testimonial) do |f| %>
 
-    <%= f.label :user_name %>
+    <%= f.label :'Імя/Назва кампаніі' %>
     <%= f.text_field :user_name %>
 
-    <%= f.label :feedback %>
+    <%= f.label :Водгук %>
     <%= f.text_field :feedback %>
 
-    <%= f.submit 'Create testimonial', class: 'btn btn-large btn-primary' %>
+    <%= f.submit 'Дадаць водгук', class: 'btn btn-large btn-primary' %>
 <% end %>

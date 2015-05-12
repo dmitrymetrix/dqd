@@ -44,6 +44,6 @@ class StudentsController < ApplicationController
   private
 
   def student_params
-    params.require(:student).permit(:github_user, :name)
+    params.require(:student).permit(:github_user, :heroku_app, :name)
   end
 end

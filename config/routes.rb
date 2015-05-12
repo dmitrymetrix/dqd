@@ -12,6 +12,6 @@ Rails.application.routes.draw do
 
   resources :testimonials, only: [:index, :new, :show, :create, :destroy]
   resources :courses, only: [:index, :show]
-
   resources :students
+  resources :bytowkas
 end

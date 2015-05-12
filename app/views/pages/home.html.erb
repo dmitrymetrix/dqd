@@ -2,11 +2,18 @@
   <h1><%= @hello %></h1>
 </div>
 
+
+<h2 style="color:#2">Зрабіце вашу будоўлю прывабнай настолькі, каб пабачыўшы яе людзі самі жадалі пасяліццца жыць ў вашых дамах!</h2> <br>
+<%= image_tag 'B1.JPG', height: 500, alt: 'Бытовачныя гарадкі' %><hr>
+<%= image_tag 'B3.JPG', width: 500, alt: 'Бытовачныя гарадкі' %>
+<%= image_tag 'B4.JPG', width: 500, alt: 'Бытовачныя гарадкі' %>
+
+
+
 <div class="jumbotron">
-  <p>Прывітаньне! Вы знаходзіцеся на галоўнае старонцы хв чаго...</p>
+  <p>Гэта вэб-прыкладаньне дапаможа вам вызначыць цану бытоўкі вашае мары. Націсьніце на працяг.</p>
 
-
-  <%= link_to 'Visit course page', 'https://github.com/micrum/course',
+  <%= link_to 'Працяг', bytowkas_path,
               target: '_blank', class: 'btn btn-success btn-lg' %>
 </div>
 
